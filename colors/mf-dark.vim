@@ -10,44 +10,45 @@ let s:telescopeIntegration = v:true
 
 let s:uiForeground = '#fff8bf'
 let s:uiBackground = '#000000'
-let s:uiSubtleBackground = '#071216'
+let s:uiSubtleBackground = '#061511'
 
 if exists('g:mf_dark_transparent') && g:mf_dark_transparent
 	let s:uiBackground = 'NONE'
 endif
 
-let s:uiLineWeak = '#0b2428'
-let s:uiLine = '#0d343c'
-let s:uiLineStrong = '#105061'
-let s:uiTextMuted = '#7fa7a2'
+let s:uiLineWeak = '#0a2923'
+let s:uiLine = '#0c3c35'
+let s:uiLineStrong = '#0f6256'
+let s:uiTextMuted = '#79aca0'
+let s:uiTextGray = '#707070'
 
-let s:uiSelection = '#063c48'
+let s:uiSelection = '#06483e'
 let s:uiSearchForeground = s:uiBackground
-let s:uiSearchBackground = '#4ca7c9'
-let s:uiSpecialKey = '#54b6d6'
+let s:uiSearchBackground = '#42b8a7'
+let s:uiSpecialKey = '#4fc8b9'
 
 let s:x = 600 + 100 + 599
 
 let s:synKeyword = '#ffb36b'
-let s:synType = '#35b5a8'
+let s:synType = '#35b99b'
 let s:synFunction = s:uiForeground
 let s:synIdentifier = s:uiForeground
 let s:synString = '#f08a5d'
-let s:synNumber = '#5fc1b6'
-let s:synConstant = '#70b9d6'
+let s:synNumber = '#85cf95'
+let s:synConstant = '#e9aa4d' " '#93cb67' " '#d5b270' " '#6bcbbf'
 let s:synComment = s:uiTextMuted
 let s:synPreProc = s:synKeyword
-let s:synNamespace = '#70b9d6'
+let s:synNamespace = '#6bcbbf'
 
 let s:diagnosticError = '#ff6b5a'
 let s:diagnosticWarn = '#e6b450'
 let s:diagnosticInfo = s:uiTextMuted
 let s:diagnosticHint = s:uiTextMuted
-let s:diagnosticOk = '#35b5a8'
+let s:diagnosticOk = '#35b99b'
 let s:diagnosticUnnecessary = s:uiLine
 
-let s:diffAdd =    '#35b5a8'
-let s:diffChange = '#70b9d6'
+let s:diffAdd =    '#35b99b'
+let s:diffChange = '#6bcbbf'
 let s:diffDelete = '#ff8a72'
 
 function! s:hi(group, fg)
@@ -75,7 +76,7 @@ call s:hiEx('Visual', s:uiForeground, s:uiSelection)
 
 call s:hiEx('SignColumn', s:uiLineWeak, s:uiBackground)
 call s:hiEx('ColorColumn', 'NONE', s:uiLineWeak)
-call s:hi('LineNr', s:uiTextMuted)
+call s:hi('LineNr', s:uiTextGray)
 
 call s:clear('CursorLineNr')
 call s:hiEx('CursorLine', 'NONE', 'NONE', 'NONE')
