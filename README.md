@@ -1,5 +1,4 @@
-# μDark
-Small VS Dark inspired theme for Vim/Neovim.
+Personal collection of vim themes
 
 # Installation
 - Install as a regular vim plugin (Recommended). OR
